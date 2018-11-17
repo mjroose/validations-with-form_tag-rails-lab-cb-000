@@ -1,4 +1,15 @@
 <h2>Create an Author</h2>
+
+<% if @author.errors.any? %>
+  <div class="error_explanation">
+    <ul>
+      <% @author.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
 <%= form_tag authors_path, method: "post" do %>
   <div class="field">
     <%= label_tag "name", "Name" %>
