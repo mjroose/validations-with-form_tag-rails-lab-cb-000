@@ -1,7 +1,6 @@
 <h2>Create an Author</h2>
 
 <% if @author.errors.any? %>
-<% raise @author.errors %>
   <div class="#error_explanation">
     <ul>
       <% @author.errors.full_messages.each do |message| %>
