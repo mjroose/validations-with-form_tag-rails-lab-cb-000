@@ -1,7 +1,7 @@
 <h2>Editing "<%= @post.title %>"</h2>
 
 <% if @post.errors.any? %>
-  <div id="#error_explanation">
+  <div id="error_explanation">
     <ul>
       <% @post.errors.full_messages.each do |message| %>
         <li><%= message %></li>
